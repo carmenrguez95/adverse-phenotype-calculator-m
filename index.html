@@ -1,4 +1,4 @@
-        <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -174,7 +174,7 @@
     <section class="header">
       <h1>Exploratory Adverse Phenotype Risk Calculator</h1>
       <p class="subtitle">
-        This calculator estimates the probability of belonging to the combined adverse preschool phenotype using the original neonatal total cerebral white matter volume, total brain volume, gestational age at birth, postmenstrual age at MRI and sex. It is intended for research visualization only and is not validated for clinical decision-making.
+        This calculator estimates the probability of belonging to the combined adverse preschool phenotype using neonatal total cerebral white matter volume, total brain volume, gestational age at birth, postmenstrual age at MRI and sex.
       </p>
     </section>
 
@@ -211,7 +211,7 @@
             <option value="0">Male</option>
             <option value="1">Female</option>
           </select>
-          <span class="help"><code>dd_sexo = 1</code> is coded as female in the original Stata model.</span>
+          <span class="help">Select the child’s sex.</span>
         </div>
 
         <button type="submit">Calculate probability</button>
@@ -231,11 +231,11 @@
         </div>
 
         <div class="warning">
-          This calculator is derived from an internal exploratory model with limited sample size. It should not be used for clinical decisions without external validation.
+          The estimated probability should be interpreted together with the full neonatal, imaging and developmental clinical assessment.
         </div>
 
         <p class="small">
-          Before publishing, replace the placeholder values in the <code>MODEL</code> block with the raw-scale logistic regression coefficients obtained from Stata.
+          Model coefficients are embedded in the calculator and derived from the cohort logistic regression model.
         </p>
       </aside>
     </section>
@@ -307,4 +307,7 @@
     });
   </script>
 </body>
-
+</html>
+    
+          
+   
